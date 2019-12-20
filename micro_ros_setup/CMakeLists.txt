@@ -42,6 +42,7 @@ install(
   PROGRAMS 
     scripts/create_ws.sh 
     scripts/create_agent_ws.sh 
+    scripts/create_bridge_tools.sh 
     scripts/create_client_ws.sh
     scripts/create_host_client_ws.sh
     scripts/create_dev_ws.sh
