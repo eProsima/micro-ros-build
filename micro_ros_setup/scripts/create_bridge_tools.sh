@@ -3,18 +3,19 @@
 set -e
 set -o nounset
 
+WORK_DIR=${PWD}
+
+sudo rm -rf copy_to_raspberry
 mkdir copy_to_raspberry
 cd copy_to_raspberry
-export WORK_DIR="pwd"
 
-git clone https://github.com/micro-ROS/ros2-performance -b cc_microros
-cd ros2-performance 
-git checkout e3cb7f8d61a1a10271050b3b2a476a25f1f9f802
-cd cross-compiling
+
+git clone https://github.com/micro-ROS/ros2-performance -b microros_cc_tool
+cd ros2-performance/cross-compiling
 export TARGET=raspbian && export ROS2_DISTRO=dashing
 bash build.sh
 bash automatic_cross_compile.sh
-sudo cp -r $WORK_DIR/ros2-performance/micro-ros_cc_ws $WORK_DIR
+sudo cp -rf $WORK_DIR/ros2-performance/ros2_cc_ws $WORK_DIR
 
 
 cd $WORK_DIR
