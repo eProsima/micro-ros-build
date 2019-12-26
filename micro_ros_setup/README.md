@@ -73,10 +73,10 @@ These commands create the firmware workspace and then configure an example NuttX
 ```shell
 ros2 run micro_ros_setup create_build_tools.sh
 ```
-The first time that you execute this tool, the building time could take up to one hour, but the next time the time decrease to 15~25 minutes. 
-The result of the building is on: ```uros_ws/copy_to_raspberry```
+The first  execution of this tool, the building time could take up to one hour and half to finish but on subsequent execution the building time decrease to ~15min
+Once the building process is finished, you can find the result with the 6lowpan configuration script on the next folder:  ```uros_ws/copy_to_raspberry```
 
-You only need to copy the folder ``/copy_to_raspberry`` to the folder ``/home/pi`` of the Rasbperry Pi SD card.
+You only need to copy the folder ``/copy_to_raspberry`` from your host PC to the folder ``/home/pi`` of the Rasbperry Pi .
 
 If you want to see the full set-up tutorial of the micro-ROS hardware bridge, go to this link: [micro-ROS Bridge Tutorial](https://github.com/micro-ROS/micro-ROS-bridge_RPI/tree/new_bridge_tools)
 
