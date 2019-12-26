@@ -3,6 +3,10 @@
 set -e
 set -o nounset
 
+sudo apt-get install -y --no-install-recommends qemu-user-static binfmt-support \
+update-binfmts --enable qemu-arm \
+update-binfmts --display qemu-arm
+
 WORK_DIR=${PWD}
 
 sudo rm -rf copy_to_raspberry
