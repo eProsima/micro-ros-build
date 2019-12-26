@@ -68,6 +68,19 @@ ros2 run micro_ros_setup build_firmware.sh
 
 These commands create the firmware workspace and then configure an example NuttX build that uses Micro-ROS.
 
+## 5/5 Building micro-ROS software bridge
+
+```shell
+ros2 run micro_ros_setup create_build_tools.sh
+```
+The first time that you execute this tool, the building time could take up to one hour, but the next time the time decrease to 15~25 minutes. 
+The result of the building is on: ```uros_ws/copy_to_raspberry```
+
+You only need to copy the folder ``/copy_to_raspberry`` to the folder ``/home/pi`` of the Rasbperry Pi SD card.
+
+If you want to see the full set-up tutorial of the micro-ROS hardware bridge, go to this link: [micro-ROS Bridge Tutorial](https://github.com/micro-ROS/micro-ROS-bridge_RPI/tree/new_bridge_tools)
+
+
 # Deployment and Usage
 
 ## Flashing the firmware
