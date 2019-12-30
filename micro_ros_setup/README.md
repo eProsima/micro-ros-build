@@ -71,7 +71,7 @@ These commands create the firmware workspace and then configure an example NuttX
 ## 5/5 Building micro-ROS software bridge
 
 ```shell
-ros2 run micro_ros_setup create_build_tools.sh
+ros2 run micro_ros_setup create_bridge_tools.sh
 ```
 The first  execution of this tool, the building time could take up to one hour and half to finish but on subsequent execution the building time decrease to ~15min
 Once the building process is finished, you can find the result with the 6lowpan configuration script on the next folder:  ```uros_ws/copy_to_raspberry```
