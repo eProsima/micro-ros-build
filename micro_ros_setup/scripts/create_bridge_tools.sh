@@ -28,7 +28,7 @@ bash build.sh
 bash automatic_cross_compile.sh
 
 # Copy the result of the cross-compilation work
-sudo cp -rf $WORK_DIR/ros2-performance/micro-ros_cc_ws $WORK_DIR
+cp -rf $WORK_DIR/ros2-performance/micro-ros_cc_ws $WORK_DIR
 
 # Download the 6LowPan set-up script.
 cd $WORK_DIR
@@ -36,4 +36,4 @@ wget https://raw.githubusercontent.com/micro-ROS/micro-ROS-bridge_RPI/master/RPI
 chmod +wxr script.sh
 
 # Delete the previous workspace
-sudo rm -rf $WORK_DIR/ros2-performance
+rm -rf $WORK_DIR/ros2-performance
