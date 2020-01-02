@@ -1,4 +1,5 @@
 { "names": {
   "rcutils": { "cmake-args": [ "-DENABLE_TESTING=ON" ], },
+  "microcdr": { "cmake-args": [ "-DBUILD_SHARED_LIBS=ON" ], },
   }
 }
